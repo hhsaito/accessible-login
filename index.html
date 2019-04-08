@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Harry Saito | Accessible Login</title>
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+        <main>
+            <div class="login__box">
+                <h1>Login</h1>
+                <div id="username_item">
+                    <label for="user_name">User name:</label>
+                    <input type="text" name="user_name" id="user_name" aria-required="true">
+                </div>
+                <div id="password_item">
+                    <label for="user_password">Password:</label>
+                    <input type="text" name="user_password" id="user_password" aria-required="true" aria-describedby="password_description">
+                    <p aria-hidden="true" id="password_description" class="visuallyhidden">Password must include one capital letter, one lower case letter, and at least one number.</p>
+                </div>
+                <button class="btn" id="user_login">Log in</button>
+            </div>
+        </main>
+        <script type="text/javascript" src="js/form-validate.js"></script>
+    </body>
+</html>
